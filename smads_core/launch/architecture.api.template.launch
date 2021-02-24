@@ -1,0 +1,22 @@
+<launch>
+  <arg name="map_name" default="UT_Campus"/>
+  <arg name="maps_dir" default="$(find amrl_maps)"/>
+  <arg name="gps_update_topic" default="/nav_sat/fix"/>
+  <arg name="output_odom_topic" default="/jackal_velocity_controller/odom"/>
+  <arg name="output_scan_topic" default="/velodyne_2dscan_high_beams"/>
+
+  <node pkg="smads_core" type="smads_endpoints_node.py" name="smads_endpoints_node" output="screen">
+	<param name="platform" value="1"/>
+	<param name="platform_prefix" value="smads"/>
+  </node>
+
+  <node pkg="smads_core" type="gps_translator_node" name="smads_gps_translator_node" output="screen">
+	<param name="map_name" value="$(arg map_name)"/>
+	<param name="maps_dir" value="$(arg maps_dir)"/>
+	<param name="gps_update_topic" value="$(arg gps_update_topic)"/>
+  </node>
+
+  <param name="smads_output_odom_topic" value="$(arg output_odom_topic)"/>
+  <param name="smads_output_scan_topic" value="$(arg output_scan_topic)"/>
+
+</launch>

@@ -1,0 +1,13 @@
+[Unit]
+Description=smads archiecture service
+After=network.target network-online.target robotfleet.service
+StartLimitIntervalSec=5
+
+[Service]
+Type=simple
+Restart=never
+User=administrator
+ExecStart=/usr/bin/env bash /etc/smads-architecture.sh
+
+[Install]
+WantedBy=multi-user.target

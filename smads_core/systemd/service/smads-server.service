@@ -1,0 +1,13 @@
+[Unit]
+Description=smads robot server service
+After=network.target network-online.target smads-architecture.service
+StartLimitIntervalSec=5
+
+[Service]
+Type=simple
+Restart=never
+User=administrator
+ExecStart=/usr/bin/env bash /etc/smads-robot-server.sh
+
+[Install]
+WantedBy=multi-user.target

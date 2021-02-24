@@ -1,0 +1,6 @@
+framework module Pods_SMADS_Manager {
+  umbrella header "Pods-SMADS Manager-umbrella.h"
+
+  export *
+  module * { export * }
+}

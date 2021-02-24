@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>smads_core</name>
+  <version>0.0.2</version>
+  <description>
+  SMADS core architecure for robot deployment.
+  </description>
+
+  <maintainer email="maxsvetlik@utexas.edu">Max Svetlik</maintainer>
+  <license>BSD</license>
+
+
+  <author email="maxsvetlik@utexas.edu">Max Svetlik</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>actionlib_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>ros_type_introspection</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>topic_tools</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>genmsg</build_depend>
+
+  <exec_depend>actionlib_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>ros_type_introspection</exec_depend>
+  <exec_depend>topic_tools</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>rospy_message_converter</exec_depend>
+
+</package>

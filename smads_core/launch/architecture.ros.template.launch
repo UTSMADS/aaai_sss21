@@ -1,0 +1,16 @@
+<launch>
+    <!-- Parameters for fetching data to be homogenized -->
+    <param name="/smads/in/localization/topic" value=""/>
+    <param name="/smads/in/localization/map_name" value=""/>
+    <param name="/smads/in/localization/maps_dir" value=""/>
+    <param name="/smads/out/navigation/topic" value=""/>
+    <param name="/smads/out/navigation/msg_type" value=""/>
+    <param name="/smads/out/navigation/msg_pkg" value=""/>
+    <param name="/smads/in/navigation/status/topic" value=""/>
+    <param name="/smads/in/navigation/planned_path/topic" value=""/>
+    
+    <node pkg="smads_core" type="navigation_interface.py" name="navigation_interface" output="screen"/>
+    <node pkg="smads_core" type="gps_translator_node" name="gps_translator_node" output="screen" />
+    <node pkg="smads_core" type="message_translator" name="message_translator" output="screen" />
+
+</launch>

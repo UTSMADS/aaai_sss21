@@ -1,0 +1,27 @@
+[submodule "graph_navigation"]
+	path = graph_navigation
+	url = https://github.com/ut-amrl/graph_navigation.git
+[submodule "enml"]
+	path = enml
+	url = https://github.com/ut-amrl/enml.git
+[submodule "amrl_msgs"]
+	path = amrl_msgs
+	url = https://github.com/ut-amrl/amrl_msgs.git
+[submodule "amrl_maps"]
+	path = amrl_maps
+	url = https://github.com/ut-amrl/amrl_maps.git
+[submodule "deps/config-reader"]
+	path = deps/config-reader
+	url = https://github.com/ut-amrl/config-reader.git
+[submodule "deps/amrl_maps"]
+	path = deps/amrl_maps
+	url = https://github.com/ut-amrl/amrl_maps.git
+[submodule "deps/amrl_msgs"]
+	path = deps/amrl_msgs
+	url = https://github.com/ut-amrl/amrl_msgs.git
+[submodule "deps/src/shared"]
+	path = deps/src/shared
+	url = git@github.com:umass-amrl/amrl_shared_lib.git
+[submodule "deps/shared"]
+	path = deps/shared
+	url = git@github.com:umass-amrl/amrl_shared_lib.git

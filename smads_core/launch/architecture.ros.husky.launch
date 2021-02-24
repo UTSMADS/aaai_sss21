@@ -1,0 +1,16 @@
+<launch>
+    <!-- Parameters for fetching data to be homogenized -->
+    <param name="/smads/in/localization/topic" value="/localization"/>
+    <param name="/smads/in/localization/map_name" value="UT_Campus"/>
+    <param name="/smads/in/localization/maps_dir" value="$(find amrl_maps)"/>
+    <param name="/smads/out/navigation/topic" value="move_base_simple/goal"/>
+    <param name="/smads/out/navigation/msg_type" value="Pose2Df"/>
+    <param name="/smads/out/navigation/msg_pkg" value="amrl_msgs"/>
+    <param name="/smads/in/navigation/status/topic" value="/navigation_goal_status"/>
+    <param name="/smads/in/navigation/planned_path/topic" value="/trajectory"/>
+    
+    <node pkg="smads_core" type="navigation_interface.py" name="navigation_interface" output="screen"/>
+    <node pkg="smads_core" type="gps_translator_node" name="gps_translator_node" output="screen" />
+    <node pkg="smads_core" type="message_translator" name="message_translator" output="screen" />
+
+</launch>

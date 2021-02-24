@@ -1,0 +1,6 @@
+[submodule "smads_robot_app_client"]
+	path = smads_robot_app_client
+	url = https://github.com/UTSMADS/smads_robot_app_client
+[submodule "smads_core"]
+	path = smads_core
+	url = https://github.com/UTSMADS/smads_core.git
